@@ -13,6 +13,7 @@ URL:		https://assets.nagios.com/downloads/ncpa/docs/html/index.html
 Source0:	https://github.com/NagiosEnterprises/ncpa/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	ee7e11c7ecc12ddd7bc4bc63a4308980
 Requires:	nagios-common
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appdir	%{_prefix}/lib/ncpa
